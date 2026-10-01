@@ -1,0 +1,211 @@
+:root{
+    /* Background  → #0B1120
+Cards       → #1E293B
+Blue        → #3B82F6
+Text        → #F8FAFC
+Secondary   → #CBD5E1
+Border      → #334155 */
+    --background-color: #0B1120;
+    --background2-color:#111827;
+    --text-color: #F8FAFC;
+    --secondar-color:#CBD5E1;
+    --border-color:#334155;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--background-color);
+}
+
+/* ------header-section-------*/
+
+header{
+    /* margin: 50px; */
+    padding:0;
+    margin: 0;
+    background-color: var(--background2-color);
+    color: var(--text-color);
+    border:2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+#nav-bar{
+    display: flex;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+#mode button{
+    border-radius: 70%;
+    margin-right: 30px;
+}
+
+/* ------main-------*/
+
+
+    /* ------main-section-1 -------*/
+    #section-1{
+        padding:30px;
+        display: flex;
+        align-items: center;
+        /* justify-content:space-between; */
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border:2px solid var(--border-color);
+        line-height: 3rem;
+    }
+    #section-1 #dp{
+        margin-right: 20px;
+    }
+    .dp{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+    #details h1{
+        font-size: 50px;
+    }
+
+    #details button{
+        padding:3px;
+        border-radius: 30px;
+        border-color: none;
+    }
+
+        /* ------main-section-2 -------*/
+        #section-2{
+            display: flex;
+        }
+            /* about */
+            #about{
+                color: var(--text-color);
+                background-color: var(--background2-color);
+                border:2px solid var(--border-color);
+                border-radius: 10px;
+                padding: 20px;
+                padding-right: 40px;
+                margin: 40px;
+                line-height: 1.5rem;
+            }
+
+            /* leetcode */
+            #leetcode{
+                height: 350px;
+                width: 800px;
+                color: var(--text-color);
+                background-color: var(--background2-color);
+                border:2px solid var(--border-color);
+                border-radius:10px;
+                padding: 20px;
+                margin: 20px;
+            }
+        
+        /* ------main-section-3 -------*/
+
+        #section-3{
+            display: flex;
+            /* background-color: var(--background2-color);
+            color: var(--text-color);
+            border-color: var(--border-color); */
+        }
+
+        #education{
+            background-color: var(--background2-color);
+            color: var(--text-color);
+            border:2px solid var(--border-color);
+            padding: 20px;
+            margin:20px;
+            border-radius: 10px;
+            height: 180px;
+            width:410px;
+        }
+        #skills{
+            background-color: var(--background2-color);
+            color: var(--text-color);
+            border:2px solid var(--border-color);
+            padding: 20px;
+            margin:20px;
+            border-radius: 10px;
+            height: 180px;
+            width:410px;
+        }
+        #hobbies{
+            background-color: var(--background2-color);
+            color: var(--text-color);
+            border:2px solid var(--border-color);
+            padding: 20px;
+            margin:20px;
+            border-radius: 10px;
+            height: 180px;
+            width:410px;
+            /* display: flex; */
+        }
+
+        .hobbies{
+            /* display: flex;
+            flex-direction: column; */
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            line-height:3rem;
+
+        }
+        .hobbies div{
+            padding-right: 30px;        }
+
+        /* ------main-section-4 -------*/
+
+        #section-4{
+            display: flex;
+            margin: 20px;
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            background-color: var(--background2-color);
+            border: 2px solid var(--border-color);
+        }
+        #contact-me{
+            background-color: var(--background2-color);
+            color: var(--text-color);
+            height: 170px;
+            width:800px;
+            margin: 10px;
+            line-height: 30px;
+        }
+        #contact{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            line-height: 40px;
+            /* padding: 10px;    */
+        }
+
+        #message{
+            background-color: var(--background2-color);
+            border: 2px solid var(--border-color);
+            /* margin-left: 400px; */
+            height: 90%;
+            width:100%;
+            margin-top:5%;
+            margin-bottom: 5%;
+            margin-right: 10px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #user-name ,#user-email,#txt-area{
+            background-color: var(--background2-color);
+        }
+
+        #btn-send{
+            background-color: aqua;
+        }
